@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display 속성 테스트</title>
+<style>
+    /* body { font-family: sans-serif; padding: 20px; }
+    .section { margin-bottom: 30px; } 각 구역 사이 여백 */
+
+    /* block — 한 줄 전체를 차지 */
+    .block-box { 
+        display: block; 
+        background: #bae6fd; 
+        border: 2px solid #0ea5e9; 
+        padding: 4px 8px; 
+        margin-bottom: 6px; 
+    }
+
+    /* inline — 내용만큼만 차지, width/height 무시됨 */
+    .inline-box { 
+        display: inline; 
+        background: #bbf7d0; 
+        border: 2px solid #22c55e; 
+        padding: 4px 8px; 
+    }
+
+    /* inline-block — 가로 배치 + 크기 지정 가능 */
+    .ib-box {
+        display: inline-block;
+        width: 100px; /* 글자가 안 깨지도록 너비를 조금 늘렸습니다 */
+        height: 50px;
+        background: #fde68a;
+        border: 2px solid #f59e0b;
+        text-align: center;
+        line-height: 50px;
+    }
+</style>
+</head>
+<body>
+    <div class="section">
+        <h3>1. display: block</h3>
+        <div class="block-box">block 박스 1</div>
+        <div class="block-box">block 박스 2</div>
+    </div>
+    
+    <div class="section">
+        <h3>2. display: inline</h3>
+        <span class="inline-box">inline 1</span>
+        <span class="inline-box">inline 2</span>
+    </div>
+
+    <div class="section">
+        <h3>3. display: inline-block</h3>
+        <div class="ib-box">inline-block 1</div>
+        <div class="ib-box">inline-block 2</div>
+        <div class="ib-box">inline-block 3</div>
+    </div>
+</body>
+</html>
